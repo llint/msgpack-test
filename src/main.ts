@@ -29,7 +29,7 @@ class Connection {
     })
 
     this.ms.on('msg', m => {
-      console.log(`msg: ${m}`)
+      console.log(`msg: ${JSON.stringify(m)}`)
     })
   }
 
@@ -76,6 +76,7 @@ async function Test() {
     const c = await client.promise
 
     c.send('---hellofdsafdsafdsafdsafdsafdsafdsafdsafdsafdsa---')
+    c.send({a: 0, b: 'hello', c: false})
     c.send('###safdsafdsafdsafdsafdsa###')
   }
   catch (e)
