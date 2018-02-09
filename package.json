@@ -1,0 +1,21 @@
+{
+    "name": "msgpack-test",
+    "version": "0.1.0",
+    "description": "msgpack test",
+    "license": "MIT",
+    "author": {
+        "name": "Lin"
+    },
+    "repository": {},
+    "scripts": {
+        "start": "ts-node src/main.ts"
+    },
+    "dependencies": {
+        "@types/lodash": "^4.14.102",
+        "@types/node": "^8.9.1",
+        "lodash": "^4.17.5",
+        "msgpack": "^1.0.2",
+        "ts-node": "^4.1.0",
+        "typescript": "^2.7.1"
+    }
+}

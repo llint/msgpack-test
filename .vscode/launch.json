@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch: node",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/main.ts",
+            "sourceMaps": true,
+            "outFiles": [
+                "${workspaceFolder}/dst/*.js"
+            ]
+        },
+        {
+            "name": "Launch: ts-node",
+            "type": "node",
+            "request": "launch",
+            "args": ["${workspaceFolder}/src/main.ts"],
+            "runtimeArgs": [
+                "--nolazy",
+                "-r",
+                "ts-node/register"
+            ],
+            "sourceMaps": true,
+        }
+    ]
+}
